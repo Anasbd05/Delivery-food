@@ -1,0 +1,76 @@
+.login-popup{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    display: grid;
+}
+.login-container{
+    place-self: center;
+    width: max(23vw , 330px);
+    color: #555;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 1.4s ;
+}
+.login-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.login-title img{
+    width: 16px;
+    cursor: pointer;
+}
+.login-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.login-inputs input{
+    background: transparent;
+    padding: 8px;
+    border: none;
+    border-bottom: 1.5px solid silver;
+    outline: none;
+}
+.login-container button{
+    background: tomato;
+    border: none;
+    border-radius: 50px;
+    padding: 8px;
+    font-weight: 600;
+    transition: .6s all;
+}
+.login-container button:hover{
+   scale: .96;
+   background: rgb(244, 144, 127);
+}
+.login-condition{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-top: -10px;
+}
+.login-condition input{
+    margin-top: 5px;
+}
+.login-condition p{
+    font-size: 14px;
+}
+.sign{
+    color: tomato;
+    cursor: pointer;
+    transition: .7s all;
+    font-weight: 800;
+}
+.sign:hover{
+    color: black;
+}
